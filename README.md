@@ -1,73 +1,112 @@
-# Welcome to your Lovable project
 
-## Project info
+# Customizable "About Me" Portfolio Template
 
-**URL**: https://lovable.dev/projects/29086ce6-1479-4a96-9875-c915bc56d33b
+A fully customizable personal portfolio template where all content is controlled through a single configuration file.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Easily Customizable**: Update your entire portfolio by editing a single config file
+- **Responsive Design**: Looks great on all devices
+- **Dark Mode Support**: Toggle between light and dark themes
+- **Section Control**: Enable/disable sections by setting values to "N/A"
+- **Custom Colors**: Customize the color scheme to match your personal brand
 
-**Use Lovable**
+## How to Customize
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/29086ce6-1479-4a96-9875-c915bc56d33b) and start prompting.
+### 1. Edit Configuration File
 
-Changes made via Lovable will be committed automatically to this repo.
+Open `src/config/profileConfig.ts` and update the values with your information:
 
-**Use your preferred IDE**
+```typescript
+// Example configuration
+export const profileConfig = {
+  // Basic Info
+  name: "John Smith", // Your name
+  title: "Frontend Developer", // Your professional title
+  photoUrl: "https://...", // URL to your profile photo
+  bio: "A passionate frontend developer...", // Your bio
+  
+  // Contact Information (set any to "N/A" to hide)
+  email: "john@example.com",
+  phone: "+1 (555) 123-4567", 
+  location: "New York, USA",
+  
+  // Social Links (set to "N/A" to hide)
+  socials: {
+    github: "https://github.com/johnsmith",
+    linkedin: "https://linkedin.com/in/johnsmith",
+    twitter: "https://twitter.com/johnsmith",
+    instagram: "N/A", // This social link will be hidden
+    facebook: "N/A"
+  },
+  
+  // Skills (set to [] to hide section)
+  skills: [
+    { name: "HTML/CSS", level: 90 },
+    { name: "JavaScript", level: 85 }
+  ],
+  
+  // Experience (set to [] to hide section)
+  experience: [...],
+  
+  // Education (set to [] to hide section)
+  education: [...],
+  
+  // Projects (set to [] to hide section)
+  projects: [...],
+  
+  // Theme Configuration
+  theme: {
+    primaryColor: "#3B82F6", // Blue
+    secondaryColor: "#10B981", // Green
+    accentColor: "#8B5CF6", // Purple
+    darkMode: false // Set to true for dark mode by default
+  }
+};
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 2. Disabling Sections
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+To disable a section, you can:
 
-Follow these steps:
+- Set string values to "N/A" (e.g., `bio: "N/A"`)
+- Set array values to empty array (e.g., `skills: []`)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 3. Custom Styling
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+You can customize the color scheme by editing the `theme` section in the config file:
 
-# Step 3: Install the necessary dependencies.
-npm i
+```typescript
+theme: {
+  primaryColor: "#3B82F6", // Change to your preferred primary color
+  secondaryColor: "#10B981", // Change to your preferred secondary color
+  accentColor: "#8B5CF6", // Change to your preferred accent color
+  darkMode: false // Set to true for dark mode by default
+}
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 4. Changing Profile Photo
+
+Replace the `photoUrl` with a URL to your own profile photo. You can use services like Imgur or any image hosting service.
+
+## Development
+
+This project is built with:
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+
+To run locally:
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## License
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/29086ce6-1479-4a96-9875-c915bc56d33b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+MIT
