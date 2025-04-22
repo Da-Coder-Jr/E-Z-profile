@@ -15,55 +15,7 @@ A fully customizable personal portfolio template where all content is controlled
 
 ### 1. Edit Configuration File
 
-Open `src/config/profileConfig.ts` and update the values with your information:
-
-```typescript
-// Example configuration
-export const profileConfig = {
-  // Basic Info
-  name: "John Smith", // Your name
-  title: "Frontend Developer", // Your professional title
-  photoUrl: "https://...", // URL to your profile photo
-  bio: "A passionate frontend developer...", // Your bio
-  
-  // Contact Information (set any to "N/A" to hide)
-  email: "john@example.com",
-  phone: "+1 (555) 123-4567", 
-  location: "New York, USA",
-  
-  // Social Links (set to "N/A" to hide)
-  socials: {
-    github: "https://github.com/johnsmith",
-    linkedin: "https://linkedin.com/in/johnsmith",
-    twitter: "https://twitter.com/johnsmith",
-    instagram: "N/A", // This social link will be hidden
-    facebook: "N/A"
-  },
-  
-  // Skills (set to [] to hide section)
-  skills: [
-    { name: "HTML/CSS", level: 90 },
-    { name: "JavaScript", level: 85 }
-  ],
-  
-  // Experience (set to [] to hide section)
-  experience: [...],
-  
-  // Education (set to [] to hide section)
-  education: [...],
-  
-  // Projects (set to [] to hide section)
-  projects: [...],
-  
-  // Theme Configuration
-  theme: {
-    primaryColor: "#3B82F6", // Blue
-    secondaryColor: "#10B981", // Green
-    accentColor: "#8B5CF6", // Purple
-    darkMode: false // Set to true for dark mode by default
-  }
-};
-```
+Open `src/config/profileConfig.ts` and update the values with your information.
 
 ### 2. Disabling Sections
 
