@@ -12,8 +12,8 @@ A fully customizable personal portfolio template where all content is controlled
 - **Custom Colors**: Customize the color scheme to match your personal brand
 
 ## How to Customize - Fork on github
->  **WARNING!**  
->  Fork this
+> [!WARNING]  
+>  Fork this github repo!
 
 ### 1. Edit Configuration File
 
