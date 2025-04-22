@@ -70,7 +70,6 @@ npm run dev
    - Unzip the download.  
    - In your project’s `public/` folder, delete any existing favicon files.  
    - Copy all generated files from the ZIP into `public/`.  
-   - (If you haven’t already) ensure your `<head>` in `index.html` references those files.
 
 ##  Hosting on Vercel
 
