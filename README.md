@@ -15,7 +15,7 @@ A fully customizable personal portfolio template where all content is controlled
 
 ### 1. Edit Configuration File
 
-Open `src/config/profileConfig.ts` and update the values with your information.
+Open (`src/config/profileConfig.ts')[https://github.com/Da-Coder-Jr/E-Z-profile/blob/main/src/config/profileConfig.ts] and update the values with your information.
 
 ### 2. Disabling Sections
 
