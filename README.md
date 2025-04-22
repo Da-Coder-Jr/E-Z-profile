@@ -12,10 +12,12 @@ A fully customizable personal portfolio template where all content is controlled
 - **Custom Colors**: Customize the color scheme to match your personal brand
 
 ## How to Customize - Fork on github
+>  **WARNING!**  
+>  Fork this
 
 ### 1. Edit Configuration File
 
-Open [`src/config/profileConfig.ts`](https://github.com/Da-Coder-Jr/E-Z-profile/blob/main/src/config/profileConfig.ts) and update the values with your information.
+Open src/config/profileConfig.ts and update the values with your information.
 
 ### 2. Disabling Sections
 
