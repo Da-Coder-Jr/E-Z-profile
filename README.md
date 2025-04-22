@@ -13,7 +13,7 @@ A fully customizable personal portfolio template where all content is controlled
 
 ## How to Customize - Fork on github
 > [!WARNING]  
->  Fork this github repo!
+>  # Fork this github repo before starting!
 
 ### 1. Edit Configuration File
 
