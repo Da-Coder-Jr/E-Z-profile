@@ -59,6 +59,28 @@ npm install
 npm run dev
 ```
 
-## License
+##  Favicon Setup
 
-MIT
+1. **Generate your icons**  
+   - Go to https://realfavicongenerator.net  
+   - Upload your source image or select an emoji/icon, choose platforms, then click **Generate Favicon**.  
+   - Download the ZIP containing `favicon.ico`, `favicon-32x32.png`, `apple-touch-icon.png`, etc.
+
+2. **Install your icons**  
+   - Unzip the download.  
+   - In your project’s `public/` folder, delete any existing favicon files.  
+   - Copy all generated files from the ZIP into `public/`.  
+   - (If you haven’t already) ensure your `<head>` in `index.html` references those files.
+
+##  Hosting on Vercel
+
+You can also deploy this portfolio to Vercel in seconds:
+
+1. Push your repo to GitHub (or another Git provider).  
+2. Log in to Vercel and click **New Project**.  
+3. Select your repository and import it.  
+4. Accept the auto‑detected Vite build settings.  
+5. Click **Deploy** — your site will be live at `https://your-project.vercel.app`.  
+
+Optionally, add a custom domain and Vercel will manage HTTPS and continuous updates on every git push.  
+
