@@ -11,7 +11,7 @@ A fully customizable personal portfolio template where all content is controlled
 - **Section Control**: Enable/disable sections by setting values to "N/A"
 - **Custom Colors**: Customize the color scheme to match your personal brand
 
-## How to Customize
+## How to Customize - Fork on github
 
 ### 1. Edit Configuration File
 
