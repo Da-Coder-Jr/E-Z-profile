@@ -1,5 +1,5 @@
 
-# Customizable "About Me" Portfolio Template
+# E-Z profile 
 
 A fully customizable personal portfolio template where all content is controlled through a single configuration file.
 
